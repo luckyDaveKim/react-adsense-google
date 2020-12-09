@@ -1,7 +1,7 @@
 {
   "name": "react-adsense-google",
   "description": "React component for google adsense",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "main": "dist/index.js",
   "scripts": {
     "lint": "eslint src",
