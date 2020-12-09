@@ -1,0 +1,53 @@
+{
+  "name": "react-adsense-google",
+  "description": "React component for google adsense",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "eslint src",
+    "clean": "rimraf dist",
+    "build": "npm run clean && cross-env NODE_ENV=production babel src -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luckyDaveKim/react-adsense-google.git"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "react-component",
+    "google",
+    "adsense",
+    "google-adsense"
+  ],
+  "author": {
+    "name": "Dave",
+    "email": "lucky.dave.k@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luckyDaveKim/react-adsense-google/issues"
+  },
+  "homepage": "https://github.com/luckyDaveKim/react-adsense-google",
+  "peerDependencies": {
+    "@babel/core": "^7.0.0",
+    "webpack": "^5.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.15.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-react": "^7.21.5",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "rimraf": "^3.0.2",
+    "webpack": "^5.10.0"
+  }
+}
