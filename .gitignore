@@ -11,6 +11,9 @@ yarn-error.log*
 # Dependency directories
 node_modules/
 
+# Distribution directories
+dist
+
 # =========================
 # IDE Files
 # =========================
