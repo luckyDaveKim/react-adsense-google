@@ -3,12 +3,18 @@
   "description": "React component for google adsense",
   "version": "1.3.0",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "lint": "eslint src",
-    "clean": "rimraf dist",
-    "build-declaration": "tsc --emitDeclarationOnly",
-    "build": "npm run clean && cross-env NODE_ENV=production && npm run build-declaration &&  babel src -d dist --extensions .ts,.tsx"
+    "test": "jest",
+    "clean": "rm -rf dist",
+    "build-babel": "babel src -d dist --extensions .ts,.tsx --ignore src/__tests__",
+    "build-type-declaration": "tsc --emitDeclarationOnly",
+    "build": "npm run clean && cross-env NODE_ENV=production && npm run build-babel && npm run build-type-declaration"
   },
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/luckyDaveKim/react-adsense-google.git"
@@ -36,15 +42,16 @@
     "@babel/preset-env": "^7.12.11",
     "@babel/preset-react": "^7.12.10",
     "@babel/preset-typescript": "^7.12.7",
+    "@types/jest": "^26.0.19",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "cross-env": "^7.0.3",
     "eslint": "^7.17.0",
     "eslint-plugin-babel": "^5.3.1",
     "eslint-plugin-react": "^7.22.0",
+    "jest": "^26.6.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "rimraf": "^3.0.2",
     "typescript": "^4.1.3"
   },
   "browserslist": [
